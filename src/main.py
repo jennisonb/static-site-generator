@@ -1,7 +1,10 @@
 from textnode import TextNode, TextType
-import inspect
-from htmlnode import HTMLNode
 
-if __name__ == "__main__":
-    example = HTMLNode("", "", "", {"href": "https://www.google.com", "target": "_blank",})
-    print(example.props_to_html())
+
+def main():
+    node = TextNode("This is a text node", TextType.BOLD, "https://www.boot.dev")
+    print(node)
+
+
+main()
+
